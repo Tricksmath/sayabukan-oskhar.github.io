@@ -1,0 +1,661 @@
+.back{
+    position: absolute;
+    width: 100%;
+    height: 3500px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+#navbar{
+    background: transparent;
+    /*border-bottom: 5px solid rgb(0,118,147);*/
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    top: 70px;
+    left: 0;
+}
+#bg-navbar{
+    background: rgb(0,118,147);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 270px;
+    height: 80px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#judul-navbar{
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    opacity: 0;
+    color: /*#c0c3ca*/#e5f2fe;
+    font-size: 35px;
+    font-family: quicksand;
+    font-weight: bold;
+}
+#buttonCenter{
+    position: absolute;
+    height: 80px;
+    left: 700px;
+}
+.tbl{
+    position: relative;
+    margin: 25px;
+    margin-top: 15px;
+    padding: 0px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    background: transparent;
+    color: rgb(0,110,144);
+    font-family: arial;
+    font-size: 25px;
+}
+.tblAfter {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 0;
+    left: 0;
+    background: /*#3a83a3*/#004558;
+    border-radius: 1px;
+    bottom: 0px;
+    display: block;
+}
+#tblAfter1{
+    width: 100%;
+}
+.animatedIn{
+    -webkit-animation: animateIn 0.5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+.animatedOut{
+    -webkit-animation: animateOut 0.5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes animateIn {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes animateOut {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0px;
+  }
+}
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #191f26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.loader.hidden {
+    animation: fadeOut 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.container-opening{
+    box-shadow: 0px 5px 15px rgb(0,0,0,0.7);
+    position: absolute;
+    background: url("bg.jpeg");
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 800px;
+    background-size: cover;
+    margin: 0;
+    border: none;
+}
+.container-about{
+    box-shadow: 0px 5px 15px rgb(0,0,0,0.7);
+    position: absolute;
+    width: 100%;
+    top: 800px;
+    left: 0;
+    height: 1600px;
+    background: #003d50;
+}
+#container-content{
+    position: absolute;
+    width: 100%;
+    top: 2400px;
+    left: 0;
+    height: 500px;
+}
+#container-mynotes{
+    box-shadow: 0px -5px 15px rgb(0,0,0,0.7);
+    position: absolute;
+    width: 100%;
+    top: 2900px;
+    left: 0;
+    height: 700px;
+    background: #003d50;
+}
+#container-mynotes p{
+    color: white;
+}
+#pCatatan1{
+    opacity: 0;
+    font-family: quicksand;
+    font-size: 38px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#pCatatan2{
+    opacity: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 250px;
+    left: 700px;
+    width: 500px;
+}
+#catatanFormal{
+    opacity: 0;
+    position: absolute;
+    top: 300px;
+    right: 800px;
+}
+#catatanFormal p{
+    font-size: 16px;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+#label{
+    position: absolute;
+    overflow: hidden;
+    top: -20px;
+    right: 0;
+    background: #c0c3ca;
+    color: #003d50;
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;
+    width: 240px;
+    opacity: 0;
+    height: 70px;
+    border-bottom-right-radius: 20px;
+    font-size: 30px;
+    font-family: quicksand;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.5);
+}
+#box{
+    position: absolute;
+    width: 1100px;
+    height: 1400px;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #004e66;
+    box-shadow: 5px 5px 15px rgb(0,0,0,0.7);
+}
+#center-box{
+    position: absolute;
+    width: 400%;
+    top: 0px;
+    left: 0;
+    height: 500px;
+    background: black;
+}
+#box1{
+    position: absolute;
+    top: 0px;
+    height: 500px;
+    background: /*rgb(40,40,40)*/url(bg-prgr3.jpg);
+    background-size: cover;
+}
+.blur{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0px;
+    height: 500px;
+    background: rgb(0,0,0,0.7);
+    background-size: cover;
+}
+#boxImg{
+    opacity: 0;
+    position: absolute;
+    top: 70px;
+    right: 840px;
+    width: 250px;
+    height: 250px;
+}
+#pBox1{
+    opacity: 0;
+    position: absolute;
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: bold;
+    top: 80px;
+    left: 580px;
+    color: /*#23c5eb*/white;
+}
+#pBox2{
+    opacity: 0;
+    position: absolute;
+    font-family: quicksand;
+    font-size: 20px;
+    /*font-weight: bold;*/
+    width: 500px;
+    top: 140px;
+    left: 600px;
+    color: /*#23c5eb*/white;
+}
+.tblContact{
+    opacity: 0;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-family: quicksand;
+    font-weight: bold;
+    border-radius: 5px;
+    top: 320px;
+    background: #11946f;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+.tblContact:hover{
+    background: #1ef5b8;
+}
+.tblContact img{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-top: 12px;
+}
+#tblContact1{
+    left: 550px;
+}
+#tblContact2{
+    left: 630px;
+}
+#tblContact3{
+    left: 710px;
+}
+#tblContact4{
+    left: 790px;
+}
+#pContact{
+    margin-top: 7px;
+}
+#box2{
+    position: absolute;
+    top: 0px;
+    height: 500px;
+    background: url(bg-prgr2.jpg);
+    background-size: cover;
+}
+#boxImg1{
+    opacity: 0;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.4);
+}
+#btn-center{
+    position: absolute;
+    width: 180px;
+    top: 390px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.tblCS{
+    opacity: 0;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-family: quicksand;
+    font-weight: bold;
+    border-radius: 6px;
+    background: #1f4b70;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    box-shadow: 3px 3px 5px rgb(0,0,0,0.4);
+}
+.tblCS:hover{
+    background: #47acff;
+}
+.tblCS img{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-top: 12px;
+}
+#tblCS2{
+    left: 70px;
+}
+#tblCS3{
+    left: 140px;
+}
+#pBox3{
+    opacity: 0;
+    color: white;
+    top: 210px;
+    font-family: quicksand;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 600px;
+    font-size: 18px;
+    text-align: center;
+}
+#box3{
+    position: absolute;
+    top: 0px;
+    height: 500px;
+    background: url(bg-prgr6.jpg);
+    background-size: cover;
+}
+#boxImg2{
+    opacity: 0;
+    position: absolute;
+    top: 120px;
+    left: 810px;
+    width: 180px;
+    height: 180px;
+}
+#pBox4{
+    opacity: 0;
+    color: white;
+    top: 290px;
+    font-family: monospace;
+    position: absolute;
+    left: 700px;
+    width: 400px;
+    font-size: 16px;
+    text-align: center;
+}
+#pBox5{
+    opacity: 0;
+    color: white;
+    /*font-weight: bold;*/
+    top: 150px;
+    font-family: quicksand;
+    position: absolute;
+    width: 350px;
+    font-size: 20px;
+    text-align: center;
+}
+#listBox{
+    opacity: 0;
+    font-family: quicksand;
+    font-weight: bold;
+    position: absolute;
+    left: 400px;
+    top: 220px;
+    font-size: 18px;
+}
+#listBox a{
+    color: #d40000;
+}
+#box4{
+    position: absolute;
+    top: 0px;
+    height: 500px;
+    background: /*rgb(40,40,40)*/url(bg-prgr3.jpg);
+    background-size: cover;
+}
+#list{
+    opacity: 0;
+    font-family: quicksand;
+    position: absolute;
+    left: 600px;
+    top: 210px;
+    font-size: 18px;
+    color: #004e66;
+}
+#list a{
+    color: #03a9f5;
+}
+.content{
+    opacity: 0;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background: #c0c3ca;
+    box-shadow: -5px 5px 15px rgb(0,0,0,0.7);
+}
+.content img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
+#content1{
+    top: 150px;
+    right: -80px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#content1 img{
+    right: 0;
+}
+.content p{
+    opacity: 0;
+    position: absolute;
+    width: 500px;
+    color: rgb(50,50,50);
+}
+#p1{
+    color: rgb(30,30,30);
+    font-size: 24px;
+    left: 35px;
+    top: 50px;
+    font-family: arial;
+}
+#p2{
+    font-size: 16px;
+    left: 50px;
+    top: 100px;
+    font-family: monospace;
+}
+#content2{
+    top: 550px;
+    left: -80px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(0,0,0,0.7);
+}
+#content2 img{
+    left: 0;
+}
+#p3{
+    color: rgb(30,30,30);
+    font-size: 24px;
+    left: 345px;
+    top: 0px;
+    font-family: arial;
+}
+#p4{
+    font-size: 15px;
+    right: 50px;
+    top: 50px;
+    font-family: monospace;
+}
+#p5{
+    font-size: 17px;
+    font-family: quicksand;
+    top: 210px;
+    left: 335px;
+    font-weight: bold;
+}
+#content3{
+    top: 950px;
+    right: -80px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(0,0,0,0.7);
+}
+#content3 img{
+    right: 0;
+}
+#p6{
+    color: rgb(30,30,30);
+    font-size: 24px;
+    left: 40px;
+    top: 0px;
+    font-family: arial;
+}
+#p7{
+    font-size: 15px;
+    left: 50px;
+    top: 70px;
+    font-family: monospace;
+}
+#p8{
+    font-size: 17px;
+    font-family: quicksand;
+    top: 245px;
+    left: 330px;
+    font-weight: bold;
+}
+#backWa{
+    opacity: 0;
+    border-radius: 5px;
+    background: white;
+    position: absolute;
+    left: 530px;
+    top: 250px;
+    width: 40px;
+    height: 40px;
+}
+#wa{
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+}
+#wa:hover{
+    opacity: 0.3;
+}
+#bg-name{
+    position: absolute;
+    top: 220px;
+    right: 30px;
+    width: 360px;
+    height: 380px;
+    /*background: linear-gradient(transparent, rgb(255,255,255,0.1), rgb(255,255,255,0.2), rgb(255,255,255,0.3), rgb(255,255,255,0.4), rgb(255,255,255,0.5), rgb(255,255,255,0.5), rgb(255,255,255,0.5), rgb(255,255,255,0.4), rgb(255,255,255,0.3), rgb(255,255,255,0.2), rgb(255,255,255,0.1), transparent);*/
+    background: linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,0.3),rgba(255,255,255,0.4),rgba(255,255,255,0.4),rgba(255,255,255,0.3),rgba(255,255,255,0));
+    /*border: 5px solid white;*/
+}
+.perkenalan{
+    position: absolute;
+
+}
+#perkenalan1{
+    opacity: 0;
+    font-size: 65px;
+    top: 35px;
+    /*right: 320px;*/
+    left: 30px;
+    color:  rgb(0,110,144);
+    font-family: monospace;
+    font-weight: bold;
+}
+#perkenalan2{
+    opacity: 0;
+    font-size: 50px;
+    top: 110px;
+    /*right: 95px;*/
+    left: 30px;
+    color: #00303e;
+    font-family: arial;
+    font-weight: bold;
+}
+#About-me{
+    opacity: 0;
+    text-align: center;
+    border: none;
+    font-size: 35px;
+    font-family: quicksand;
+    height: 65px;
+    width: 190px;
+    position: absolute;
+    top: 240px;
+    /*right: 210px;*/
+    left: 30px;
+    background: transparent;
+    border: 5px solid rgb(0,110,144);
+}
+#About-me:hover{
+    background: rgb(0,110,144);
+    color: #c0c3ca;
+}
+#typing{
+    color: #cefcfe;
+    font-family: monospace;
+    font-size: 30px;
+}
+#topButton{
+    opacity: 0;
+    box-shadow: -5px 5px 10px rgb(0,0,0,0.5);
+    background: /*#00617f*/#00303e;
+    color: #e0f2fe;
+    transform: rotate(-90deg);
+    font-size: 32px;
+    font-weight: bold;
+    font-family: quicksand;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    left: 30px;
+    border: none;
+    border-radius: 5px;
+}
+#bayangan{
+    background: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#menetap{
+    background: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
